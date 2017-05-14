@@ -1,1 +1,1 @@
-# catalog
+# University catalogue
