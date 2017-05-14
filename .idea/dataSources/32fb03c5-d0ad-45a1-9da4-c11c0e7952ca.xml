@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="catalog@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="catalog">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sakila"/>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="teste"/>
+    <schema id="9" parent="1" name="world"/>
+    <table id="10" parent="2" name="notare"/>
+    <table id="11" parent="2" name="profesor"/>
+    <table id="12" parent="2" name="student"/>
+    <column id="13" parent="10" name="idNota">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="10" name="numarMatricol">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="15" parent="10" name="idProfesor">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="16" parent="10" name="valoareNota">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="17" parent="10" name="comentariu">
+      <Position>5</Position>
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <index id="18" parent="10" name="idProfesor">
+      <ColNames>idProfesor</ColNames>
+    </index>
+    <index id="19" parent="10" name="numarMatricol">
+      <ColNames>numarMatricol</ColNames>
+    </index>
+    <key id="20" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idNota</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="21" parent="10" name="notare_ibfk_1">
+      <ColNames>numarMatricol</ColNames>
+      <RefSchemaName>catalog</RefSchemaName>
+      <RefTableName>student</RefTableName>
+      <RefColNames>numarMatricol</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="22" parent="10" name="notare_ibfk_2">
+      <ColNames>idProfesor</ColNames>
+      <RefSchemaName>catalog</RefSchemaName>
+      <RefTableName>profesor</RefTableName>
+      <RefColNames>idProfesor</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="23" parent="11" name="idProfesor">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="11" name="numeProfesor">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="11" name="prenumeProfesor">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="11" name="materie">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="11" name="usernameProfesor">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="11" name="parolaProfesor">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="29" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idProfesor</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="12" name="numarMatricol">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="12" name="numeStudent">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="12" name="prenumeStudent">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="12" name="usernameStudent">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="12" name="parolaStudent">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="35" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>numarMatricol</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

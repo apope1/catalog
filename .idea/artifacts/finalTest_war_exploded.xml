@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="finalTest:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/finalTest_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="finalTest/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="finalTest" />
+          <element id="jpa-descriptors" facet="finalTest/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 5.2.9-5.2.9" />
+          <element id="library" level="project" name="JPA 2.0-2.0" />
+          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
