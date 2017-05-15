@@ -1,4 +1,4 @@
-package com.login;
+package com.servlet;
 
 import com.domain.Profesor;
 import com.repository.RepositoryNotare;

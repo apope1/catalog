@@ -119,7 +119,7 @@
 
 <%
     if (session.getAttribute("student") == null) {
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("servlet.jsp");
     }
 %>
 

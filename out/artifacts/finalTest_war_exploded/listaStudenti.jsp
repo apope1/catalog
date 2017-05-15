@@ -104,7 +104,7 @@
 <body>
 <%
     if (session.getAttribute("listaStudenti") == null) {
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("servlet.jsp");
     }
 %>
 

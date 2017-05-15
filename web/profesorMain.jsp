@@ -123,7 +123,7 @@
 
 <%
     if (session.getAttribute("profesor") == null) {
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("servlet.jsp");
     }
 %>
 
