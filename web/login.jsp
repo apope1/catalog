@@ -38,7 +38,6 @@
             width: 100%;
             margin-bottom: 10px;
             background: rgba(0, 0, 0, 0.3);
-            border: none;
             outline: none;
             padding: 10px;
             font-size: 13px;

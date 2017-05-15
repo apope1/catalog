@@ -13,7 +13,6 @@
     <style>
 
 
-        @import url(http://fonts.googleapis.com/css?family=Patua+One|Open+Sans);
 
         * {
             -moz-box-sizing: border-box;
@@ -119,7 +118,7 @@
 
 <%
     if (session.getAttribute("student") == null) {
-        response.sendRedirect("servlet.jsp");
+        response.sendRedirect("login.jsp");
     }
 %>
 

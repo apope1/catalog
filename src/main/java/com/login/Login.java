@@ -1,4 +1,4 @@
-package com.servlet;
+package com.login;
 
 import com.repository.RepositoryProfesor;
 import com.repository.RepositoryStudent;
