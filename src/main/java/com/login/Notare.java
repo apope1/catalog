@@ -40,6 +40,11 @@ public class Notare extends HttpServlet {
             comentariu = request.getParameter("comentariu");
             idProfesor = ((Profesor) session.getAttribute("profesor")).getIdProfesor();
 
+            if(valoareNota > 10)
+            {
+                throw new Exception("Nota prea mare");
+            }
+
             com.domain.Notare notare = new com.domain.Notare();
             notare.setIdProfesor(idProfesor);
             notare.setValoareNota(valoareNota);
